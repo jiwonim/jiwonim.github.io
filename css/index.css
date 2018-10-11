@@ -1,0 +1,104 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+* , *::before, *::after{
+  box-sizing: border-box;
+
+}
+html{
+  font-size:10px; /*원래 기본은 16px 이라 계산을 편하게 하기위해 바디는 10 자식을은 rem; 사용*/
+}
+* , *::before, *::after{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #1b5faa;
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+}
+a{
+  color: inherit; /* 부모 스타일만 영향 받도록 */
+  text-decoration:none;
+}
+.rwd/*반응형 웹 디자인 */{
+  max-width:100%;
+  height:auto;  
+}
+.header_wrapper{
+  border-bottom: 1px solid white; 
+  justify-content: ceneter;
+}
+.header{
+  width:80%;
+  height:50px;
+  margin:30px auto;  
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+    
+.navigation{
+  list-style:none;
+  flex-direction:row;
+  display:flex;
+}
+.navigation li{
+  margin:0 20px;
+}
+.navigation a{
+  text-decoration:none;
+  color:white;  
+  font-size: 2rem;    
+}
+.hello_wrapper{
+  background-image: url(../img/hands.png);
+  height:0;
+  width:100%;
+  padding-top:100vh;
+  background-repeat: no-repeat;
+  background-position:0 0;
+  background-size: contain;
+
+  position:relative;
+}
+
+.description{
+  background-color:yellow;
+  position:absolute;
+  top:50%;
+  left:50%;
+  text-align:center;
+  transform:translate(-50%,-50%);
+}
+.img-wrapper{
+  width:50%;
+  background-color: lime;
+}
+.logo{
+  border: 5px solid red;
+  margin-top:-20px;
+}
+.card{
+  display:none;
+  background-color: white;
+  width:80%;
+  height:450px;
+  margin:20px auto;
+}
+.card img{
+  display:none;
+}
+.footer{
+  background-color: #07223f;
+  width:100%;
+  height:150px;  
+}
+.contact{
+list-style:none;
+flex-direction: row;
+justify-content: space-between;
+}
+.contact a{
+color: yellow;
+}
