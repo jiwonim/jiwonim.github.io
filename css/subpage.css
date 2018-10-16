@@ -1,0 +1,39 @@
+.main_wrapper .top_img{
+ width:100%;
+}
+
+.title_wrapper{
+  margin:150px 10%;
+  /* display:flex; */
+  justify-content: space-evenly;
+  background-color: yellow;
+}
+
+
+
+.text_wrapper{
+  display:flex;
+  flex-direction: column;
+}
+.title{
+  color:#253b97;
+}
+.description{
+  text-align:left;
+  color:#333;
+}
+
+@media screen and (max-width:1000px){
+  /* 미디어쿼리 스크린마다 다른 코딩을 줄 수 있다. 이 부분은 모바일용 */
+
+/* .title_img{
+  
+  height:auto;
+} */
+  
+.title_wrapper{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+}
